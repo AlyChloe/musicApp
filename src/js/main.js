@@ -147,6 +147,7 @@ $(document).ready(function() {
         function topSongsGenerator() {
             $.ajax({
                 type: 'GET',
+                domain: 'https://github.com/AlyChloe',
                 url: 'http://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key=' + key + '&format=json',
                 dataType: 'jsonp',
                 data: {
@@ -163,6 +164,7 @@ $(document).ready(function() {
             var settings = {
                 "async": true,
                 "crossDomain": true,
+                "domain": 'https://github.com/AlyChloe',
                 "url": "http://ws.audioscrobbler.com/2.0/?method=track.search&track=" + encodeURIComponent(searchValue) + "&api_key=" + key + '&format=json',
                 "method": "GET",
                 "processData": false,
@@ -178,6 +180,7 @@ $(document).ready(function() {
             var settings = {
                 "async": true,
                 "crossDomain": true,
+                "domain": 'https://github.com/AlyChloe',
                 "url": "http://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=" + encodeURIComponent(searchValue) + "&api_key=" + key + '&format=json',
                 "method": "GET",
                 "processData": false,
