@@ -1,0 +1,63 @@
+.favorite-section {
+
+  .loved-container {
+    position: relative;
+    height: 270px;
+    overflow: hidden;
+    background: rgba(0,0,0,.5);
+
+    h1 {
+      text-align: center;
+      padding: 25px 0 5px;
+      color: $white;
+      font-size: 42px;
+      font-weight: 100;
+    }
+
+      .todays-favorite {
+        width: 320px;
+        margin: 0 auto;
+        padding-top: 25px;
+
+        .artist-background {
+          position: absolute;
+          top: -55%;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          width: 100%;
+          z-index: -1;
+          @include media(mobile) {
+            top: -30%;
+          };
+        }
+
+        .heart {
+          width: 150px;
+          display: inline-block;
+        }
+
+        .song-info {
+          color: $white;
+          float: right;
+          padding-top: 55px;
+          width: 50%;
+
+          .fa {
+            padding-right: 10px;
+          }
+
+          h2 {
+            padding-bottom: 15px;
+            font-size: 28px;
+          }
+
+          p {
+            padding-bottom: 10px;
+            font-size: 18px;
+            font-weight: 100;
+          }
+        }
+      }
+  }
+}

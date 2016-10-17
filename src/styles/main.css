@@ -1,0 +1,116 @@
+@import "https://fonts.googleapis.com/css?family=Bitter|Roboto:300,400,500,500i";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+main {
+  font-family: 'Roboto', sans-serif; }
+  main section h1 {
+    padding: 10px 0 20px 165px; }
+
+.container {
+  margin: 0 auto; }
+
+aside {
+  float: left;
+  height: 100vh;
+  background: #000000;
+  padding: 20px 45px; }
+  aside header h1 {
+    font-family: 'Bitter', serif;
+    color: #fff; }
+  aside nav ul li {
+    padding: 10px 0; }
+    aside nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 100;
+      font-size: 14px;
+      letter-spacing: .5px; }
+
+nav {
+  padding-top: 30px; }
+
+.top-songs {
+  float: left;
+  width: 20%;
+  min-height: 125px;
+  position: relative;
+  overflow: hidden; }
+  .top-songs img {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+  .top-songs .song-info p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+
+.global-songs {
+  float: left;
+  width: 20%;
+  min-height: 145px;
+  position: relative;
+  overflow: hidden; }
+  .global-songs img {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+  .global-songs .song-info p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+
+.music-container {
+  overflow: hidden;
+  padding: 10px 15px; }
+
+.global-songs-container {
+  overflow: hidden;
+  padding: 10px 15px; }
+
+/*# sourceMappingURL=main.css.map */

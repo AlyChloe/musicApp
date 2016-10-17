@@ -1,0 +1,46 @@
+.music-section {
+  width: 100%;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 27px;
+    padding: 20px 0 10px 200px;
+    font-weight: 100;
+    position: absolute;
+    z-index: 1;
+    background: $pink;
+    padding: 15px 20px;
+    left: 248px;
+    top: 242px;
+    border-radius: 50px;
+    color: white;
+    @include media(tablet) {
+      display: none;
+    };
+  }
+
+  .music-container {
+    overflow: hidden;
+    padding: 55px 70px 10px;
+    height: 406px;
+    @include media(largePhone) {
+      padding: 55px 40px 10px;
+    };
+    @include media(smallTablet) {
+      height: auto;
+    };
+
+    .top-songs-container {
+      width: 33%;
+      float: left;
+      overflow: hidden;
+      padding-bottom: 20px;
+      @include media(smallTablet) {
+        width: 50%;
+      };
+      @include media(mobile) {
+        width: 100%;
+      };
+    }
+  }
+}

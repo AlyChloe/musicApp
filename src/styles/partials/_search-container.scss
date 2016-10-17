@@ -1,0 +1,47 @@
+.search-container {
+  overflow: hidden;
+  padding: 20px 80px 0;
+
+  form {
+
+    label, input {
+      width: 100%;
+    }
+
+    ::-webkit-input-placeholder, input {
+       color: #fff;
+       font-size: 20px;
+    }
+
+    input {
+      margin-top: 10px;
+      padding: 15px;
+      background: none;
+      border: transparent;
+      border-radius: 45px;
+      background-color: black;
+      color: $white;
+      font-weight: 200;
+      letter-spacing: .5px;
+      padding-left: 20px;
+      outline: none;
+      transition: background-color 1s;
+
+      &:focus {
+        border: $lightBlue solid 5px;
+      }
+    }
+
+    .inputColor {
+      background-color: $pink;
+      transition: 1s;
+    }
+
+    label {
+      font-size: 30px;
+      font-weight: 100;
+      display: block;
+      text-align: center;
+    }
+  }
+}

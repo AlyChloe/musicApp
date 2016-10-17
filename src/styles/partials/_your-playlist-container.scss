@@ -1,0 +1,72 @@
+.your-playlist-songs-container {
+  @include media(largePhone) {
+    float: left;
+    width: 33%;
+    padding-bottom: 10px;
+  };
+
+  .playlist-songs {
+    position: relative;
+
+    #bars {
+      height: 30px;
+      left: 19px;
+      margin: -30px 0 0 -20px;
+      position: absolute;
+      top: 14px;
+      width: 25px;
+
+      .bar {
+         background: #666;
+          bottom: 1px;
+          height: 3px;
+          position: absolute;
+          width: 3px;
+          animation: sound 0ms -800ms linear infinite alternate;
+
+          @keyframes sound {
+              0% {
+                 opacity: .35;
+                  height: 3px;
+              }
+              100% {
+                  opacity: 1;
+                  height: 28px;
+              }
+          }
+
+          &:nth-child(1)  { left: 1px; animation-duration: 474ms; }
+          &:nth-child(2)  { left: 5px; animation-duration: 433ms; }
+          &:nth-child(3)  { left: 9px; animation-duration: 407ms; }
+          &:nth-child(4)  { left: 13px; animation-duration: 458ms; }
+          &:nth-child(5)  { left: 17px; animation-duration: 400ms; }
+      }
+    }
+
+    .song-info {
+      padding-bottom: 25px;
+      padding-left: 30px;
+
+      h2 {
+        padding-bottom: 10px;
+        text-align: left;
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      h2, p {
+        @include media(largePhone) {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        };
+      }
+
+      p {
+        font-size: 14px;
+        font-weight: 100;
+      }
+    }
+  }
+
+}

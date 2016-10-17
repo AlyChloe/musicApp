@@ -1,0 +1,81 @@
+.container {
+  aside {
+    @include media(tablet) {
+      float: none;
+      height: auto;
+      padding: 10px 42px 0;
+    };
+    @include media(largePhone) {
+      overflow: hidden;
+      padding: 10px 22px 0 42px;
+    };
+    @include media(mobile) {
+      padding: 15px 22px;
+    };
+  }
+}
+aside {
+  float: left;
+  height: 100vh;
+  background-image: linear-gradient($darkBlue, $lightBlue);
+  padding: 20px 42px;
+  position: relative;
+
+  header {
+    cursor: pointer;
+    
+    @include media(tablet) {
+      float: left;
+      width: 55px;
+      padding-top: 2px;
+    };
+    @include media(mobile) {
+      margin: 0 auto;
+      float: none;
+    };
+    @include media(smallMobile) {
+      float: left;
+      width: 65px;
+    };
+    img {
+      @include media(tablet) {
+        width: 100%;
+        padding-left: 10px;
+        padding-bottom: 5px;
+      };
+      @include media(mobile) {
+        padding-left: 0px;
+      };
+      width: 90px;
+      padding-bottom: 10px;
+    }
+    h1 {
+      @include media(tablet) {
+        font-size: 21px;
+      };
+      @include media(mobile) {
+        margin-left: -3px;
+      };
+      @include media(smallMobile) {
+        font-size: 24px;
+      };
+      font-family: 'Bitter', serif;
+      color: $white;
+      font-size: 30px;
+    }
+  }
+  .arrow-right {
+      width: 0;
+      height: 0;
+      border-top: 60px solid transparent;
+      border-bottom: 60px solid transparent;
+      border-left: 60px solid $darkBlue;
+      right: -60px;
+      top: 210px;
+      z-index: 1;
+      position: absolute;
+      @include media(tablet) {
+        display: none;
+      };
+  }
+}

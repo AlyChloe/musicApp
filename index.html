@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Music App</title>
+    <script src="https://use.fontawesome.com/6cd4df7820.js"></script>
+    <link rel="stylesheet" href="lib/styles/main.min.css">
+</head>
+<body>
+    <div class="container">
+      <aside>
+        <header>
+          <img src="images/music.svg" alt="music-logo">
+          <h1>Cisum</h1>
+        </header>
+        <nav>
+          <ul>
+            <li class="nav-top-artists">
+              <a href="#">Top Artists</a>
+              <input class='toggle' type="checkbox" name='check-3' checked='checked' />
+            </li>
+            <li class="nav-similar">
+              <a href="#similar-artists">Similar Artists</a>
+              <input class='toggle' type="checkbox" name='check-3' checked='checked' />
+            </li>
+            <li class="nav-playlist">
+              <a href="#playlist">Your Playlist</a>
+              <input class='toggle' type="checkbox" name='check-3' checked='checked' />
+            </li>
+          </ul>
+        </nav>
+        <div class="arrow-right"></div>
+      </aside>
+    </div>
+    <main>
+      <section class="favorite-section">
+        <div class="loved-container">
+          <h1>Today's Most Loved</h1>
+        </div>
+      </section>
+      <section class="music-section">
+        <h1>Top Songs</h1>
+        <div class="music-container"></div>
+      </section>
+      <section class="playlist-section">
+        <aside class="playlist">
+          <h2>Your Playlist</h2>
+          <div class="your-playlist-container"></div>
+        </aside>
+        <div class="search-container">
+          <form>
+            <label for="search">What do you want to listen to?</label>
+            <input id="search" type="sumbit" placeholder="Search"/>
+          </form>
+        </div>
+        <div class="playlist-container"></div>
+      </section>
+    </main>
+
+    <script id="favorite-template" type="x-handlebars-template">
+      <div class="todays-favorite-container">
+        <div class="todays-favorite">
+          <img class="artist-background" src="{{image}}" alt="{{artist}}"/>
+          <img class="heart" src="images/musical-note.svg" alt=""/>
+          <div class="song-info">
+            <h2>{{artist}}</h2>
+            <p><i class="fa fa-music"></i>{{song}}</p>
+            <p><i class="fa fa-headphones"></i>{{listeners}} listeners</p>
+          </div>
+        </div>
+      </div>
+    </script>
+
+    <script id="top-songs-template" type="x-handlebars-template">
+      <div class="top-songs-container">
+        <div class="top-songs">
+          <img src="{{image}}" alt="{{artist}}"/>
+          <div class="song-info">
+            <h2>{{artist}}</h2>
+            <p><i class="fa fa-music"></i>{{song}}</p>
+            <p><i class="fa fa-headphones"></i>{{listeners}}</p>
+          </div>
+        </div>
+      </div>
+    </script>
+
+    <script id="playlist-template" type="x-handlebars-template">
+      <div class="playlist-search-container">
+        <div class="search-songs">
+          <div class="song-info">
+            <h2>{{artist}}</h2>
+            <p class="song"><i class="fa fa-music"></i>{{song}}</p>
+            <p class="listeners"><i class="fa fa-headphones"></i>{{listeners}}</p>
+          </div>
+        </div>
+      </div>
+    </script>
+
+    <script id="your-playlist-template" type="x-handlebars-template">
+      <div class="your-playlist-songs-container">
+        <div class="playlist-songs">
+          <div id="bars">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <div class="song-info">
+            <h2>{{artist}}</h2>
+            <p class="song">{{song}}</p>
+          </div>
+        </div>
+      </div>
+    </script>
+
+    <script id="similar-template" type="x-handlebars-template">
+      <div class="similar-songs-container">
+        <div class="similar-songs">
+        <img src="{{image}}" alt="{{artist}}"/>
+          <div class="song-info">
+            <h2>{{artist}}</h2>
+            <p class="song">{{song}}</p>
+          </div>
+        </div>
+      </div>
+    </script>
+
+    <script id="global-template" type="x-handlebars-template">
+      <div class="global-songs-container">
+        <div class="global-songs">
+          <img src="{{image}}" alt="{{artist}}"/>
+          <div class="song-info">
+            <h2>{{country}}</h2>
+            <p>{{artist}}</p>
+            <p>{{listeners}}</p>
+          </div>
+        </div>
+      </div>
+    </script>
+
+
+    <script src="src/js/jquery-3.1.1.min.js"></script>
+    <script src="src/js/handlebars-v4.0.5.js"></script>
+    <script src="src/js/main.js"></script>
+</body>
+</html>

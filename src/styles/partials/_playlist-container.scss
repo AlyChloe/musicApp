@@ -1,0 +1,56 @@
+.playlist-container {
+  overflow: hidden;
+
+  .playlist-search-container {
+    width: 50%;
+    float: left;
+    padding: 15px;
+    position: relative;
+
+    .search-songs {
+      border-left: #eee solid 2px;
+      padding: 7px 5px 0px 15px;
+
+
+      &:hover {
+        border-left: $darkBlue solid 6px;
+        color: $darkBlue;
+      }
+
+      &:hover {
+        &:after {
+        content: '\f055';
+        font-family: FontAwesome;
+        position:absolute;
+        right: 30px;
+        bottom: 29px;
+        font-size: 40px;
+        color: $darkBlue;
+      }}
+
+      .song-info {
+
+        h2, p {
+          white-space: nowrap;
+          overflow:hidden;
+          text-overflow: ellipsis;
+        }
+
+        h2 {
+          font-size: 15px;
+          padding-bottom: 10px;
+        }
+
+        p {
+          font-size: 14px;
+          font-weight: 100;
+          padding-bottom: 7px;
+        }
+
+        .fa {
+          padding-right: 8px;
+        }
+      }
+    }
+  }
+}

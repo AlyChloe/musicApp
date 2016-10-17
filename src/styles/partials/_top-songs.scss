@@ -1,0 +1,44 @@
+.top-songs {
+  width: 100%;
+  max-height: 100px;
+  position: relative;
+  overflow: hidden;
+  padding-right: 10px;
+
+  img {
+    width: 40%;
+    float: left;
+  }
+
+  .song-info {
+    border-right: #F2F2F2 solid 5px;
+    width: 60%;
+    float: left;
+    border-left: transparent;
+    height: 100px;
+    padding: 12px;
+    color: #565656;
+
+    .fa {
+      padding-right: 7px;
+      color: $darkBlue;
+    }
+
+    h2 {
+      padding-bottom: 12px;
+      font-size: 17px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    p {
+      white-space: nowrap;
+      overflow:hidden;
+      text-overflow: ellipsis;
+      padding-bottom: 10px;
+      font-size: 14px;
+      font-weight: 100;
+    }
+  }
+}

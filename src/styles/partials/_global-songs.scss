@@ -1,0 +1,25 @@
+.global-songs {
+  float: left;
+  width: 20%;
+  min-height: 145px;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .song-info {
+
+    p {
+      white-space: nowrap;
+      overflow:hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

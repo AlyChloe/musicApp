@@ -1,0 +1,29 @@
+aside {
+  float: left;
+  height: 100vh;
+  background: #000000;
+  padding: 20px 45px;
+
+  header {
+    h1 {
+      font-family: 'Bitter', serif;
+      color: #fff;
+    }
+  }
+
+  nav {
+    ul {
+      li {
+        padding: 10px 0;
+        a {
+          color: #fff;
+          text-decoration: none;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 100;
+          font-size: 14px;
+          letter-spacing: .5px;
+        }
+      }
+    }
+  }
+}
