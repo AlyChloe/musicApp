@@ -148,7 +148,7 @@ $(document).ready(function() {
             $.ajax({
                 type: 'GET',
                 crossDomain: true,
-                url: 'http://www.last.fm/api/auth/?api_key=' + key + '&cb=http://localhost:63342',
+                url: 'http://www.last.fm/api/auth/?api_key=' + key + '&cb=https://github.com/AlyChloe',
                 dataType: 'jsonp',
                 data: {
                     'limit': 10
@@ -160,11 +160,12 @@ $(document).ready(function() {
             });
         }
 
+
         function playlistSearch(searchValue) {
             var settings = {
                 "async": true,
                 "crossDomain": true,
-                "url": "http://www.last.fm/api/auth/?api_key=" + encodeURIComponent(searchValue) + "&api_key=" + key + '&cb=http://localhost:63342',
+                "url": "http://www.last.fm/api/auth/?api_key=" + encodeURIComponent(searchValue) + "&api_key=" + key + '&cb=https://github.com/AlyChloe',
                 "method": "GET",
                 "processData": false,
                 "data": "{}"
@@ -179,7 +180,7 @@ $(document).ready(function() {
             var settings = {
                 "async": true,
                 "crossDomain": true,
-                "url": "http://www.last.fm/api/auth/?api_key=" + encodeURIComponent(searchValue) + "&api_key=" + key + '&cb=http://localhost:63342',
+                "url": "http://www.last.fm/api/auth/?api_key=" + encodeURIComponent(searchValue) + "&api_key=" + key + '&cb=https://github.com/AlyChloe',
                 "method": "GET",
                 "processData": false,
                 "data": {
