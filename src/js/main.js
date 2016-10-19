@@ -147,8 +147,8 @@ $(document).ready(function() {
         function topSongsGenerator() {
             $.ajax({
                 type: 'GET',
-                domain: 'https://github.com/AlyChloe',
-                url: 'http://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key=' + key + '&format=json',
+                crossDomain: true,
+                url: 'http://www.last.fm/api/auth/?api_key=' + key + '&cb=http://localhost:63342',
                 dataType: 'jsonp',
                 data: {
                     'limit': 10
@@ -164,8 +164,7 @@ $(document).ready(function() {
             var settings = {
                 "async": true,
                 "crossDomain": true,
-                "domain": 'https://github.com/AlyChloe',
-                "url": "http://ws.audioscrobbler.com/2.0/?method=track.search&track=" + encodeURIComponent(searchValue) + "&api_key=" + key + '&format=json',
+                "url": "http://www.last.fm/api/auth/?api_key=" + encodeURIComponent(searchValue) + "&api_key=" + key + '&cb=http://localhost:63342',
                 "method": "GET",
                 "processData": false,
                 "data": "{}"
@@ -180,8 +179,7 @@ $(document).ready(function() {
             var settings = {
                 "async": true,
                 "crossDomain": true,
-                "domain": 'https://github.com/AlyChloe',
-                "url": "http://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=" + encodeURIComponent(searchValue) + "&api_key=" + key + '&format=json',
+                "url": "http://www.last.fm/api/auth/?api_key=" + encodeURIComponent(searchValue) + "&api_key=" + key + '&cb=http://localhost:63342',
                 "method": "GET",
                 "processData": false,
                 "data": {
